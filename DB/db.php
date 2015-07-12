@@ -2,7 +2,7 @@
 
 define("host", "localhost");
 define("port", "5432");
-define("dbname", "postgres");
+define("dbname", "testbd");
 define("user", "postgres");
 define("password", "317");
 
