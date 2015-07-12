@@ -13,6 +13,10 @@ and open the template in the editor.
 <head><title>Chunkify Form</title></head>
 
 <body>
+    
+    <?php  
+    echo "hi";
+    ?>
 <form action="PHP/chunkify.php" method="POST">
 Enter a word: <input type="text" name="word" /><br />
 How long should the chunks be?
@@ -23,6 +27,7 @@ How long should the chunks be?
     <a  href ="upload.php"> "upload" </a> <br>
     <a  href ="DB/testDB.php"> "testdb" </a> <br>
     <a  href ="PHP/auth.php"> auth </a> <br>
+    <a  href ="AJAX/AjaxTest.html"> AJAX </a> <br>
 </body>
 </html>
 
