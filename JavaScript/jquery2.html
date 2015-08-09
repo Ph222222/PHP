@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events: click & dblclick</title>
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+    </head>
+    <body>
+        <h2>Click and double click the buttons</h2>
+        <button class='myclass'>Button 1</button>
+        <button class='myclass'>Button 2</button>
+        <button class='myclass'>Button 3</button>
+        <button class='myclass'>Button 4</button>
+        <button class='myclass'>Button 5</button>
+        <script>
+            $('.myclass').click(function () {
+                $(this).slideUp()
+            })
+            $('.myclass').dblclick(function () {
+                $(this).hide()
+            })
+        </script>
+
+        <h2>Press some keys</h2>
+        <div id='result'></div>
+        <script>
+            $(document).keypress(function (event)
+            {
+                key = String.fromCharCode(event.which)
+                if (key >= 'a' && key <= 'z' ||
+                        key >= 'A' && key <= 'Z' ||
+                        key >= '0' && key <= '9')
+                {
+                    $('#result').html('You pressed: ' + key)
+                    event.preventDefault()
+                }
+            })
+        </script>
+    </body>
+
+
+</html>
