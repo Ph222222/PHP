@@ -10,7 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <html>
-<head><title>Chunkify Form Test</title></head>
+<head><title>Chunkify Form t</title></head>
 
 <body>
     
